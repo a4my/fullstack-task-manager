@@ -15,8 +15,8 @@ function renderTasks(tasks) {
     const taskElement = document.createElement('div');
     taskElement.className = 'bg-white p-4 rounded mb-2 shadow';
     taskElement.innerHTML = `
-      <h2 class="font-bold text-indigo-600 capitalize">${task.title}</h2>
-      <p class="capitalize">${task.description}</p>
+      <h2 class="font-bold text-indigo-600 first-letter-capitalize">${task.title}</h2>
+      <p class="first-letter-capitalize">${task.description}</p>
       <div class="flex space-x-2 mt-2">
         <button class="text-indigo-500" onclick="editTask(${task.id})">Edit</button>
         <button class="text-red-500" onclick="deleteTask(${task.id})">Delete</button>
