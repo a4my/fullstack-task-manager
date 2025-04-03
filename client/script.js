@@ -13,7 +13,7 @@ function renderTasks(tasks) {
     const taskElement = document.createElement('div');
     taskElement.className = 'bg-white p-4 rounded mb-2 shadow';
     taskElement.innerHTML = `
-      <h2 class="font-bold">${task.title}</h2>
+      <h2 class="font-bold text-indigo-600">${task.title}</h2>
       <p>${task.description}</p>
       <button class="text-red-500" onclick="deleteTask(${task.id})">Delete</button>
     `;
